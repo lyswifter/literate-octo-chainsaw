@@ -1,0 +1,35 @@
+{
+  "canisters": {
+    "literate_octo_chainsaw": {
+      "main": "src/literate_octo_chainsaw/main.mo",
+      "type": "motoko"
+    },
+    "literate_octo_chainsaw_assets": {
+      "dependencies": [
+        "literate_octo_chainsaw"
+      ],
+      "frontend": {
+        "entrypoint": "src/literate_octo_chainsaw_assets/src/index.html"
+      },
+      "source": [
+        "src/literate_octo_chainsaw_assets/assets",
+        "dist/literate_octo_chainsaw_assets/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "dfx": "0.9.3",
+  "networks": {
+    "local": {
+      "bind": "127.0.0.1:8000",
+      "type": "ephemeral"
+    }
+  },
+  "version": 1
+}
